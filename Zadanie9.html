@@ -1,0 +1,59 @@
+<html>
+<head>
+
+    <title>Zad 9 </title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script language="JavaScript">
+
+        function okno_zamknij_frejtak()
+            {
+                window.close()
+            }
+
+    </script>
+
+</head>
+
+<body>
+    
+    <div style="color: green;font-size:50px;">
+        <script language="JavaScript">
+        
+            var D1_fre=prompt("D1 = ","");
+            var D2_fre=prompt("D2 = ","");
+        
+            var G1_fre=prompt("G1 = ","");
+            var G2_fre=prompt("G2 = ","");
+        
+            var dni;
+            var godziny;
+        
+            var a=parseFloat(D1_fre);
+            var b=parseFloat(D2_fre);
+            
+            var c=parseFloat(G1_fre);
+            var d=parseFloat(G2_fre);
+        
+            dni = a-b;
+            godziny = c-d;
+
+            var sekundy = ((dni * 86400) + (godziny * 3600));
+
+            document.write("D1 =" + a + "<br>");
+            document.write("G1 =" + c + "<br>");
+            document.write("D2 =" + a + "<br>");
+            document.write("G2 =" + d + "<br>");
+
+            document.write("ilość sekund = " + sekundy + "sek");
+
+        </script><br>
+    </div>
+
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+
+</body>
+</html>
