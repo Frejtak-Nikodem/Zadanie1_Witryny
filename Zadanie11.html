@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+        <title>Zadanie 11</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <script language="JavaScript">
+
+            function okno_zamknij_frejtak()
+                {
+                    window.close()
+                }
+
+        </script>
+
+    </head>
+    
+    <body>
+
+        <script>
+
+            var m_fre=prompt("m=");
+            var x = parseFloat(m_fre);
+            var y;
+
+            y = x+2;
+        
+            document.write("m= " +x+ "<br>");
+            document.write("1/" +x+ "=" + "1/" +y+ "+" + "1/" +(x+2)*7+ "+" + "1/" +(x*5));
+
+        </script>
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+
+        <title>Zadanie 13_kod</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <script language="JavaScript">
+
+            function okno_zamknij_frejtak()
+                {
+                    window.close()
+                }
+
+        </script>
+
+
+    </head>
+
+    <body>
+
+        <textarea cols=500 rows=35>
+
+            <html>
+                <head>
+
+                    <title>Zadanie 13</title>
+
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+                    <script language="JavaScript">
+
+                        function okno_zamknij_frejtak()
+                        {
+                            window.close()
+                        }
+
+                    </script>
+
+                </head>
+
+                <body>
+
+                    <script>
+
+                        var m_fre=prompt("Podaj liczbę A = ");
+                        var m2_fre=prompt("Podaj liczbę B = ");
+                        var A = parseFloat(m_fre);
+                        var B = parseFloat(m2_fre);
+        
+                        document.write("Wczytane Liczby:" ,  "A =  " +A+ "    " , "B =  " +B+ "<br>");
+                        document.write( "("+B+" + "+B+")^3 = "+A+"^3 "+ " + "+ " 3* "+ " (("+A+")^2) * ("+B+") "+ " + "+ " 3 * ("+A+") * (("+B+")^2) "+ " + "+ " "+B+"^3 = "+(A**3)+" + "+(3*((A**2)*B))+" + "+(3 * (A) * (B**2))+" + "+(B**3)+" = "+((A + B) * (A + B) * (A + B))+ "<br>"  );
+
+                    </script>
+
+                    <input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+
+                </body>
+            </html>
+
+        </textarea>
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+
+    </body>
+</html>

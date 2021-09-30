@@ -1,0 +1,58 @@
+<html>
+    <head>
+
+        <title>Zadanie 10_kod</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <script language="JavaScript">
+
+            function okno_zamknij_frejtak()
+                {
+                    window.close()
+                }
+
+        </script>
+
+
+    </head>
+
+    <body>
+
+        <textarea cols=500 rows=35>
+
+            <html>
+                <head>
+
+                    <title>Zadanie 10</title>
+
+                        <meta charset="UTF-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+                </head>
+
+                <body>
+
+                    <script>
+
+                        var m_fre=prompt("m=");
+                        var x = parseFloat(m_fre);
+                        var y;
+
+                        y = (x*(x+1));
+        
+                        document.write("m= " +x+ "<br>");
+                        document.write("1/" +x+ "=" + "1/" +(x+1)+ "+" + "1/" +y);
+
+                    </script>
+
+                </body>
+            </html>
+
+        </textarea>
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+
+    </body>
+</html>
