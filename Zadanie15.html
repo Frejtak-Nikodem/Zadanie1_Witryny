@@ -1,0 +1,47 @@
+<html>
+	<head>
+
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge , chrome=1" />
+		<meta http-equiv="content-type" content="text/html" />
+
+		<title> Zad 15 </title>
+
+		<script language="JavaScript">
+		function okno_zamknij_frejtak()
+		{
+			window.close()
+		}
+
+		</script>
+    
+	</head>
+
+	<body>
+
+		<script language="JavaScript">
+
+			var liczba1=prompt("liczba1=","");
+			var liczba2=prompt("liczba2=","");
+	
+			var B1_fre = parseFloat(liczba1);
+			var B2_fre = parseFloat(liczba2);
+	
+			var A1 = parseFloat(3*Math.pow(B1_fre, (6/(6+2))));
+			var A2 = parseFloat(2*Math.cos(B1_fre * Math.PI / 180) + 2*Math.sin(B1_fre * Math.PI / 180));
+			var A3 = Math.cbrt(Math.pow(B1_fre,5) + (2 * Math.pow(B2_fre,4)));
+			var A4 = Math.abs(B1_fre - B2_fre)
+			var A5 = ya * yq;	
+
+			document.write(B1_fre + "<br>");
+			document.write(B2_fre + "<br>");
+			document.write(A1 + "<br>");
+			document.write(A2 + "<br>");
+			document.write(A5 + "<br>");
+
+		</script>
+
+    	<input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+
+	</body>
+</html>

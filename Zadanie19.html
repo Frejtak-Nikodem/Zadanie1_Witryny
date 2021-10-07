@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title> Zadanie19 </title>
+        <script language="JavaScript">
+            function pole_frejtak(a_fre, b_fre)
+            {
+                a_dana_fre=parseFloat(a_fre)
+                b_dana_fre=parseFloat(b_fre)
+                Pole=a_dana_fre*b_dana_fre
+                document.getElementsByName('pole')[0].value=Pole.toFixed(2); /* na dokument */
+                alert("Pole="+Pole.toFixed(2)+" cm^2"); /*do okna Alert */
+                wprowadz_pole_fre.innerHTML="Pole="+Pole.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+            }
+            function obowod_frejtak(a_ber,b_ber)
+            {
+            a_dana_fre=parseFloat(a_fre)
+            b_dana_fre=parseFloat(b_fre)
+            Obwod=a_dana_fre+a_dana_fre+b_dana_fre+b_dana_fre
+            document.getElementsByName('obwod')[0].value=Obwod.toFixed(2);
+            alert("Obwod="+Obwod.toFixed(2)+" cm");
+            wprowadz_obwod_fre.innerHTML="Obwod="+Obwod.toFixed(2)+"cm";
+            }
+        </script>
+    </head>
+
+    <body>
+        Pola i obwód prostokąta
+        <br> <br>
+        <form name="formularz" action="..." onsubmit="pole_frejtak(this.promien.value,this.wysokosc.value);
+        obowod_frejtak(this.promien.value,this.wysokosc.value);return false">
+
+        Podaj a=
+        <input size="6" name="promien">
+
+        Podaj b=
+        <input size="6" name="wysokosc">
+
+        <br><br>
+
+        <input TYPE="submit" Value="oblicz" >
+
+        <br><br>
+
+        Pole=
+        <input size="6" name="pole">
+
+        Obwod=
+        <input size="6" name="obwod">
+
+        </form>
+
+        <table>
+            <tr id="wprowadz_pole_fre"></tr>
+            <tr id="wprowadz_obwod_fre"></tr>
+        </table>
+    </body>
+</html>

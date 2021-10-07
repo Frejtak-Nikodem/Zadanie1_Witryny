@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Zad 16 </title>
+<script language="JavaScript">
+function okno_zamknij_frejtak()
+{
+window.close()
+}
+</script>
+
+</head>
+<body>
+    <p>
+        
+        Cztery sposoby <b><u>wyprowadzania</u> </b> danych na stronę: <br>
+        <ol type="1" start="1">
+            <li> Z użyciem dokument.write() 
+            <li> Z użyciem okiena alert() 
+            <li> Do okienek formularza 
+            <li> Do tabeli  
+        </ol>
+
+	<b>Co to jest funkcja?</b> <br>
+        <ol type="1" start="1">
+            <li> Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy,
+            <li> Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod,
+            <li> Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b),
+            <li> Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return.
+        </ol>
+        
+        <table align="left" border="1">
+	<tr>
+	<td>Metoda
+	<td>Opis
+	</tr>
+	<tr>
+	<td> getElementById(„id”)
+	<td> Dostęp do wszystkich elementów o konkretnej <br>
+	wartości atrybutu id.
+	</tr>
+	<tr>
+	<td>getElementByTagName(„znacznik”)
+	<td> Dostęp do wszystkich elementów o typie <br>
+	znacznika, np. P lub DIV.
+	</tr>
+	<tr>
+	<td>getElementByName(„nazwa”)
+	<td> Dostęp do wszystkich elementów o konkretnej <br>
+	wartości atrybutu.
+	</tr>
+	</table><br>
+
+    </p>
+	<br><br><br><br><br><br><br>
+	<p>
+		<b><u>Właściwości tak pobranego elementu to:</u></b><br>
+		
+		- <b>innerHTML</b> – umożliwia określenie kodu HTML który zostanie umieszczony w elemencie np. w <br>
+		tabeli, 
+		- <b>innerText</b> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie, 
+		- <b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu.
+
+	</p>
+
+<textarea cols=100 rows=17>
+<!DOCTYPE html> 
+ 	<head> 
+	<title> Przykłady dostępu do elementów </title> 
+ 	<meta charset="utf-8"> 
+ 	<style type="text/css"> 
+ 		.wyroznienieCzerwone { color: Red; font-weight: 600; } 
+ 	</style>
+ 	</head> 
+ 	<body> 
+ 		<div id="nazwa"></div> 
+ 		<script>
+ 			document.getElementById("nazwa").innerHTML = "Witaj"; 
+ 			document.getElementById("nazwa").className = "wyroznienieCzerwone"; 
+ 		</script> 
+	</body>
+
+</textarea>
+
+	<br><br><br><br><br><br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+</body>
+</html>
