@@ -116,12 +116,35 @@ window.open("Zadanie19_kod.html","okienko","toolbar=no,directories=no,menubar=no
 </head>
 <body>
 <p style="font-size: 2cm; text-align: center; color: Purple"> | Frejtak | </p>
+  
+  <div id="zegarek" style="font-weight:bold; size:25PX; color: purple ; margin-right: auto; margin-left: auto;"></div>
+<script>
+
+function zegar() {
+var data = new Date();
+var godzina = data.getHours();
+var min = data.getMinutes();
+var sek = data.getSeconds();
+ var terazjest = ""+godzina+
+((min<10)?":0":":")+min+
+((sek<10)?":0":":")+sek;
+document.getElementById("zegarek").innerHTML = terazjest;
+setTimeout("zegar()", 1000); }
+zegar();
+
+</script>
+  
 <img src="obito1.png" alt="Naruto" width="150" height="200" style="float: left" >
 <img src="Itachii.png" alt="Itachi" width="200" height="200" style="float: right" >
+  
 <form style="text-align: center;">
+  
   <table bgcolor="black" border="8px" color="black" style="margin: auto;">
+    
   <tr>
+    
   <td style="text-align: center;">
+    
     <br>
   <input type="button" name="przycisk" value="Zadanie 1" onclick="WinOpen_zad1(' ')">
   <input type="button" name="przycisk" value="Zadanie 2" onclick="WinOpen_zad2(' ')">
@@ -163,23 +186,6 @@ window.open("Zadanie19_kod.html","okienko","toolbar=no,directories=no,menubar=no
   </tr>
   </table>
 </form>
-  
-  <div id="zegarek" style="FONT-WEIGHT:bold;SIZE:16PX;COLOR:purple; MARGIN-RIGHT: auto; margin-left: auto;"></div>
-<script>
-
-function zegar() {
-var data = new Date();
-var godzina = data.getHours();
-var min = data.getMinutes();
-var sek = data.getSeconds();
- var terazjest = ""+godzina+
-((min<10)?":0":":")+min+
-((sek<10)?":0":":")+sek;
-document.getElementById("zegarek").innerHTML = terazjest;
-setTimeout("zegar()", 1000); }
-zegar();
-
-</script>
   
 <style>
   
