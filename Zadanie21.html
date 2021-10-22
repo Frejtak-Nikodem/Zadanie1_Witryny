@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title> Zadanie 21 </title>
+        <script language="JavaScript">
+
+        function drabina_frej(a_fre,b_fre)
+        {
+            a_fre=parseFloat(a_fre);
+            b_fre=parseFloat(b_fre);
+
+            wynik = Math.sqrt( a_fre * a_fre + b_fre * b_fre)
+
+            document.getElementsByName('drabina')[0].value=wynik.toFixed(2); /* na dokument */
+            wyprowadz_drabina_frej.innerHTML="Drabina="+wynik.toFixed(2)+" m"+"<br>"; /* do tabeli */
+        }
+
+
+        function alfa_frej(a_fre,b_fre)
+        {
+            a_fre=parseFloat(a_fre);
+            b_fre=parseFloat(b_fre);
+
+            radan = Math.atan2(a_fre, b_fre);
+            wynik = radan * (180/Math.PI);
+
+            document.getElementsByName('alfa')[0].value=wynik.toFixed(2); /* na dokument */
+            wyprowadz_alfa_frej.innerHTML="Stopnie= "+wynik.toFixed(2)+" Stopni "+"<br>"; /* do tabeli */
+        }
+
+        </script>
+    </head>
+
+    <body>
+
+        <form name="formularz" action="..." onsubmit="drabina_frej(this.a_dana_frej.value,this.b_dana_frej.value);alfa_frej(this.a_dana_frej.value,this.b_dana_frej.value);return false">
+        
+        Podaj d=
+        <input size="6" name="a_dana_frej">
+
+        Podaj x=
+        <input size="6" name="b_dana_frej">
+
+        <br><br>
+
+        <input TYPE="submit" Value="oblicz" >
+
+        <br><br>
+
+        Drabina=
+        <input size="6" name="drabina">
+
+        Alfa=
+        <input size="6" name="alfa">
+
+        </form>
+
+        <table>
+            <tr id="wyprowadz_drabina_frej"></tr> 
+            <tr id="wyprowadz_alfa_frej"></tr> 
+        </table>
+    </body>
+</html>
