@@ -1,0 +1,57 @@
+<html>
+    <head>
+
+        <title>Zadanie 73_kod</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <script language="JavaScript">
+
+            function okno_zamknij_frejtak()
+                {
+                    window.close()
+                }
+
+        </script>
+
+
+    </head>
+
+    <body>
+
+        <textarea cols=500 rows=35>
+
+            <html>
+                <head>
+                    <meta charset="UTF-8">
+        
+                    <title>Zadanie 73</title>
+                    <!-- Frejtak Nikodem 2P -->
+                    <script>
+
+		            for(var i = 1; i < 41; i++)
+                    {
+                        w=i * i + i + 41;
+                
+                        document.write("i= "+i+" w= "+w+"    ");
+                        document.write("<br>");
+                
+                        if(i%5==0)
+                        {
+                            confirm();
+                        }
+                    }
+                    </script>
+                </head>
+
+                <body>
+                </body>
+            </html>
+
+        </textarea>
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+
+    </body>
+</html>

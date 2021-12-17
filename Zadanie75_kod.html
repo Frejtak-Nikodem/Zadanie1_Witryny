@@ -1,0 +1,53 @@
+<html>
+    <head>
+
+        <title>Zadanie 75_kod</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <script language="JavaScript">
+
+            function okno_zamknij_frejtak()
+                {
+                    window.close()
+                }
+
+        </script>
+
+
+    </head>
+
+    <body>
+
+        <textarea cols=500 rows=35>
+
+            <html>
+                <head>
+                    <meta charset="UTF-8">
+
+                    <title>Zadanie 75</title>
+                    <!-- Frejtak Nikodem 2P -->
+                    <script>
+
+                        var w = prompt("Podaj Liczbę?");
+
+                        for(var i = 1; i <= w; i++)
+                        {
+                            if(i%2==0)
+                            {
+                                document.write(i+"<br>");
+                            }
+                        }
+                    </script>
+                </head>
+                <body>  
+                </body>
+            </html>
+
+        </textarea>
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+
+    </body>
+</html>

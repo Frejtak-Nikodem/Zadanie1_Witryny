@@ -1,0 +1,56 @@
+<html>
+    <head>
+
+        <title>Zadanie 74_kod</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <script language="JavaScript">
+
+            function okno_zamknij_frejtak()
+                {
+                    window.close()
+                }
+
+        </script>
+
+
+    </head>
+
+    <body>
+
+        <textarea cols=500 rows=35>
+
+            <html>
+                <head>
+                    <meta charset="UTF-8">
+
+                    <title>Zadanie 74</title>
+                    <!-- Frejtak Nikodem 2P -->
+                    <script>
+                        for(var i = 27; i <= 42; i++)
+                        {
+                            var pierw2_fre = Math.sqrt(i);
+                            var pierw4_fre = Math.sqrt(pierw2_fre);
+
+                            document.write("i= "+i+"&nbsp;&nbsp;&nbsp;&nbsp;pierw_2("+i+")= "+pierw2_fre.toFixed(2)+"&nbsp;&nbsp;&nbsp;&nbsp;pierw_4("+i+")= "+pierw4_fre.toFixed(2)+"<br>");
+    
+                            if(i%3==0)
+                            {
+                                confirm();
+                            }
+                        }
+                    </script>
+                </head>
+
+    <body>
+    </body>
+</html>
+
+        </textarea>
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+
+    </body>
+</html>

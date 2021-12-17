@@ -1,0 +1,73 @@
+<html>
+    <head>
+
+        <title>Zadanie 76_kod</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <script language="JavaScript">
+
+            function okno_zamknij_frejtak()
+                {
+                    window.close()
+                }
+
+        </script>
+
+
+    </head>
+
+    <body>
+
+        <textarea cols=500 rows=35>
+
+            <html>
+                <head>
+                    <meta charset="UTF-8" />
+
+                    <title>Zadanie 76</title>
+		            <!-- Frejtak Nikodem 2P -->
+                    <script>
+        	            var a = prompt("Podaj liczbę a");
+        	            var b = prompt("Podaj liczbę b");
+        	            var x = 50;
+
+        	            if (a < b) 
+        	            {
+            	            for (var i = a; i <= b; i++) 
+            	            {
+            	                if (i % 2 != 0) 
+            	                {
+            	    	            document.write("<p style=\"color: green; font-size: 50px\">" + i + "</p><br>");
+            	                }
+            	            }
+        	            }
+        	            else if (b < a) 
+        	            {
+            	            for (var i = b; i <= a; i++) 
+            	            {
+                	            if (i % 2 != 0) 
+                	            {
+                    	            document.write("<p style=\"color: blue; font-size: " + x + "px\">" + i + "</p><br>");
+                    	            x = x / 2;
+               		            }
+            	            }
+        	            }
+        	            else if (a == b) 
+        	            {
+            	            alert("Liczby są równe");
+        	            }
+                    </script>
+                </head>
+
+                <body>
+                </body>
+            </html>
+
+        </textarea>
+
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_frejtak()"/>
+
+    </body>
+</html>
